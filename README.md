@@ -2,6 +2,8 @@
 
 Manage yum/dnf repositories.
 
+[![Build Status](https://travis-ci.org/Caseraw/ansible_role_yumrepos.svg?branch=master)](https://travis-ci.org/Caseraw/ansible_role_yumrepos) [<img src="https://img.shields.io/ansible/role/46856">](https://galaxy.ansible.com/caseraw/ansible_role_yumrepos) [<img src="https://img.shields.io/ansible/role/d/46856">](https://galaxy.ansible.com/caseraw/ansible_role_yumrepos) [<img src="https://img.shields.io/ansible/quality/46856">](https://galaxy.ansible.com/caseraw/ansible_role_yumrepos)
+
 - [Ansible role yum repos](#ansible-role-yum-repos)
   - [License](#license)
   - [Author Information](#author-information)
