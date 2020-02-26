@@ -1,0 +1,8 @@
+---
+- name: Ensure yum/dnf metadata and cache is cleared
+  command: yum clean metadata
+  args:
+    warn: False
+  listen: yum_dnf_clear_cache
+
+...

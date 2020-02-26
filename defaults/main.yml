@@ -1,0 +1,40 @@
+---
+### List of proxy environment variables.
+### Managing yum/dnf repositories.
+## Minimum required values: 'name', 'state' and 'description'
+##
+## For better maintainability, the repository list is built during runtime by
+## combining all lists together. This will provide the freedom of declaring
+## custom group lists for granular control. The lists require a naming
+## convention by using a pattern. The pattern is rendered as a single list
+## which can be used for iteration with variable: 'role_yumrepos_repo_list'
+## The list name pattern needs to start with: 'role_yumrepos_repo_list_'
+
+role_yumrepos_repo_list_base: []
+
+role_yumrepos_repo_list_app: []
+
+# role_yumrepos_repo_list_base:
+#   - name: base
+#     description: CentOS-$releasever - Base
+#     state: present
+#     file: CentOS-Base
+#     mirrorlist: http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=updates&infra=$infra
+#     gpgcheck: 1
+#     gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+#   - name: updates
+#     description: CentOS-$releasever - Updates
+#     state: present
+#     file: CentOS-Base
+#     mirrorlist: http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=updates&infra=$infra
+#     gpgcheck: 1
+#     gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+#   - name: extras
+#     description: CentOS-$releasever - Extras
+#     state: present
+#     file: CentOS-Base
+#     mirrorlist: http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=extras&infra=$infra
+#     gpgcheck: 1
+#     gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+...
